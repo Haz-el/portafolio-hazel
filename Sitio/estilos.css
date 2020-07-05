@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*alto y ancho. Color. Margen y espacio interno*/
+
+#menu{width: 200px;
+height: 300px;
+	background-color: rgba(179,190,204,0.83);
+	margin-top: 20px;
+	padding: 50px;
+	border: 10px rgba(41,41,41,1.00) solid;
+}
+
+#presentacion {margin: 20px;
+	padding:50px; 
+	border: 10px rgba(41,41,41,1.00) inset;
+    border-radius: 20px;
+	box-shadow: 10px 20px 15px black;
+	background-image: url(ima/fondo.jpg);
+}
+
+/*bordes y sombras*/
+#div1{width: 200px;
+height: 200px;
+	background-color: rgba(179,190,204,0.83);
+	margin-top: 20px;
+	padding: 50px;
+	border: 10px rgba(41,41,41,1.00) solid;
+}
+
+#footer {
+	position: relative;
+	background: rgba(166,186,196,1.00);
+}
+
+/*fondo ima
+<header id="presentacion" style= background-image:url(ima/fondo.jpg)   
+			></header>*/
+
+#menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*items*/
+
+#menu ul li{
+	background-color: rgba(116,115,132,1.00);
+}
+
+/*enlaces*/
+
+#menu ul a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 15px;
+	padding: 10px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	letter-spacing: 1px;
+}
+
+/*items menu*/
+
+#menu ul li {
+	
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/*efecto raton*/
+
+#menu ul li:hover{
+	background: rgba(185,62,104,1.00);
+}
+
+#menu ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+/* items del menu desplegable */
+
+#menu ul ul li {
+ float:none;
+ width:150px
+}
+
+/* enlaces de los items del menu desplegable */
+
+#menu ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+#menu ul li:hover > ul {
+ display:block;
+}
+
+
+
+
